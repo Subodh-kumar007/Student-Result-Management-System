@@ -217,7 +217,7 @@ class studentClass:
                 elif self.var_pin.get()=="":
                     messagebox.showerror("Error","Pin should be required",parent=self.root)
                 elif self.txt_address.get('1.0',END).strip()=="":
-                    messagebox.showerror("Error","Description should be required",parent=self.root)
+                    messagebox.showerror("Error","Address should be required",parent=self.root)
                 else:
                     cur.execute("insert into student(roll,name,email,gender,dob,contact,admission,course,state,city,pin,address) values(?,?,?,?,?,?,?,?,?,?,?,?)",(
                         self.var_roll.get(),self.var_name.get(),self.var_email.get(),self.var_gender.get(),self.var_dob.get(),
@@ -258,7 +258,7 @@ class studentClass:
             elif self.var_pin.get()=="":
                 messagebox.showerror("Error","Pin should be required",parent=self.root)
             elif self.txt_address.get('1.0',END).strip()=="":
-                messagebox.showerror("Error","Description should be required",parent=self.root)
+                messagebox.showerror("Error","Address should be required",parent=self.root)
             else:
                 cur.execute("select * from student where roll=?",(self.var_roll.get(),))
                 row=cur.fetchone()
