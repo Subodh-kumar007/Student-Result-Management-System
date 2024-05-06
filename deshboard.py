@@ -13,13 +13,13 @@ from math import *
 class RMS:
     def __init__(self,root):
         self.root=root
-        self.root.title("Student Result Managment System")
+        self.root.title("Student Result Management System")
         self.root.geometry("1450x750+0+0")
         self.root.config(bg="white")
         #====icons=====>
         self.logo_dash=ImageTk.PhotoImage(file="images/logo_p.png")
         #====Title====>
-        title=Label(self.root,text="Student Result Managment System",padx=10,compound=LEFT,image=self.logo_dash,font=("goudy old style",20,"bold"),bg="#033054",fg="white").place(x=0,y=0,relwidth=1,height=50)
+        title=Label(self.root,text="Student Result Management System",padx=10,compound=LEFT,image=self.logo_dash,font=("goudy old style",20,"bold"),bg="#033054",fg="white").place(x=0,y=0,relwidth=1,height=50)
         #====Menu====>
         M_Frame=LabelFrame(self.root,text="Menus",font=("times new roman",15),bg="white")
         M_Frame.place(x=10,y=70,width=1340,height=80)
@@ -50,7 +50,7 @@ class RMS:
         self.lbl.place(x=20,y=180,height=450,width=350)
         self.working()
         #====Footer====>
-        footer=Label(self.root,text="SRMS-Student Result Managment System\nContact Us for any Technical Issue: 981xxxx450",font=("goudy old style",12),bg="#262626",fg="white").pack(side=BOTTOM,fill=X)
+        footer=Label(self.root,text="SRMS-Student Result Management System\nContact Us for any Technical Issue: 981xxxx450",font=("goudy old style",12),bg="#262626",fg="white").pack(side=BOTTOM,fill=X)
         self.update()
 
 #========Functions==============>
